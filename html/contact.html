@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pawsitive Match</title>
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="hamburger-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="nav-menu">
+                <a href="home.html">Home</a>
+                <a href="#">Application</a>
+                <a href="about-us.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Get Involved</a>
+                    <div class="dropdown-content">
+                        <a href="notifications.html">Notifications & Updates</a>
+                        <a href="volunteer.html">Volunteer Opportunities</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <p>Have questions? Send us a message!</p>
+            
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+
+                <p>Prefer another way to reach us?</p>
+                <p>📧 Email: support@pawsitive-match.com</p>
+                <p>📞 Phone: (555) 123-4567</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+                
+
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/contact.js"></script>
+
+    <!-- Contact Form Confirmation Modal -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Thank You!</h2>
+        <p>We received your message and will be in touch within 24-48 hours.</p>
+    </div>
+</div>
+
+</body>
+</html>

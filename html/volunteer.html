@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Opportunities - Pawsitive Match</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="hamburger-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="nav-menu">
+                <a href="home.html">Home</a>
+                <a href="#">Application</a>
+                <a href="about-us.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Get Involved</a>
+                    <div class="dropdown-content">
+                        <a href="notifications.html">Notifications & Updates</a>
+                        <a href="volunteer.html">Volunteer Opportunities</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section class="volunteer-section">
+            <h2>Make a Difference - Volunteer With Us!</h2>
+            <p>Join our team and help pets find loving homes. Check out our available volunteer opportunities below.</p>
+
+            <div class="volunteer-list">
+                <h3>Available Volunteer Roles:</h3>
+                <ul>
+                    <li><strong>Event Helper:</strong> Assist with adoption events and fundraisers.</li>
+                    <li><strong>Foster Support:</strong> Help provide temporary care for pets in need.</li>
+                    <li><strong>Social Media Volunteer:</strong> Help us spread the word about available pets.</li>
+                    <li><strong>Transport Volunteer:</strong> Assist in driving pets to their new homes.</li>
+                </ul>
+            </div>
+
+            <h3>Sign Up to Volunteer</h3>
+            <form id="volunteerForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="availability">Availability:</label>
+                <select id="availability" name="availability">
+                    <option value="Weekdays">Weekdays</option>
+                    <option value="Weekends">Weekends</option>
+                    <option value="Anytime">Anytime</option>
+                </select>
+
+                <label for="role">Preferred Volunteer Role:</label>
+                <select id="role" name="role">
+                    <option value="" disabled selected>Select a role</option>
+                    <option value="eventHelper">Event Helper</option>
+                    <option value="fosterSupport">Foster Support</option>
+                    <option value="socialMedia">Social Media Volunteer</option>
+                    <option value="transport">Transport Volunteer</option>
+                </select>
+
+                <label for="experience">Previous Experience (if any):</label>
+                <textarea id="experience" name="experience" rows="4"></textarea>
+
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <p id="volunteerConfirmation" style="display: none; color: green; font-weight: bold;">
+                Thank you for signing up! We’ll be in touch soon.
+            </p>
+        </section>
+    </main>
+
+    <script src="../js/volunteer.js"></script>
+
+</body>
+</html>

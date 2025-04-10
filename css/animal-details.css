@@ -1,0 +1,39 @@
+.animal-details {
+    text-align: center;
+    padding: 20px;
+}
+
+.animal-details img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.animal-details p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.status {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Adopt Button */
+#adoptBtn {
+    background-color: #ff7f50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    display: block;
+    margin: 20px auto;
+}
+
+#adoptBtn:hover {
+    background-color: #e76f45;
+}

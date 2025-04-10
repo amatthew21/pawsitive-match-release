@@ -1,0 +1,84 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.adoption-list {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.adoption-list h2 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+}
+
+ul li strong {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Clear Button */
+#clearAdoptionsBtn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#clearAdoptionsBtn:hover {
+    background-color: #cc0000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+}

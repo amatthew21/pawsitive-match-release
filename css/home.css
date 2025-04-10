@@ -1,0 +1,295 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1a1a1a !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 3px solid #ff7f50;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    background-color: #ff7f50;
+    border-radius: 5px;
+}
+
+/* Hero Section - Full Screen Background */
+.hero-section {
+    position: relative;
+    background: url('../img/dog-header.jpg') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-section .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ff7f50;
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section .btn {
+    background-color: #ff7f50;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    background-color: white;
+    color: #ff7f50;
+}
+
+/* About-Style Section */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 10%;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-text h4 {
+    color: green;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.about-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff7f50;
+}
+
+.about-text span {
+    color: green;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+}
+
+.about-list li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.about-list i {
+    color: green;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Services Section */
+.services-section {
+    text-align: center;
+    padding: 6rem 10%; /* Increased spacing */
+    background: url('../img/paws.png') repeat;
+}
+
+.services-section h2 {
+    font-size: 3rem; /* Increased size */
+    font-weight: bold;
+    color: green;
+    margin-bottom: 40px; /* More spacing */
+}
+
+.service-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin: 30px 0; /* Increased spacing */
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    background-color: #ff7f50;
+    color: white;
+}
+
+.service-card h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.service-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* CTA Section */
+.cta-section {
+    background: #ff7f50;
+    color: white;
+    text-align: center;
+    padding: 70px 10%;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-section .btn {
+    background: white;
+    color: #ff7f50;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    transition: 0.3s ease;
+    display: inline-block; /* Fix button spacing */
+    text-align: center;
+}
+
+.cta-section .btn:hover {
+    background: #e76f45;
+    color: white;
+}
+
+/* Footer */
+.bg-dark {
+    background-color: #1a1a1a !important;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        width: 90%;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .services-section {
+        padding: 4rem 5%;
+    }
+}
+/* Style for the new button section */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.custom-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Manage Animal Profiles Button */
+.btn-secondary {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #388E3C;
+}
+
+/* View Adoptable Animals Button */
+.btn-primary {
+    background-color: #ff7f50; /* Orange */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #e76f45;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .button-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

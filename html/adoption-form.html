@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Form</title>
+    <link rel="stylesheet" href="../css/adoption-form.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐾 Adoption Application</h1>
+            <a href="animal-details.html" class="back-btn">⬅ Back to Animal Details</a>
+        </header>
+
+        <section class="adoption-form">
+            <h2>Enter Your Information</h2>
+            <form id="adoptionForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" required></textarea>
+                </div>
+
+                <button type="submit">Submit Adoption Request</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="../js/adoption-form.js"></script>
+</body>
+</html>

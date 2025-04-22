@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foster Matching & Transportation</title>
+    <a href="home.html" class="back-btn">⬅ Back to Home</a>
+
+    <link rel="stylesheet" href="../css/case3.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">🚗 Foster Matching & Transportation Management</h1>
+
+        <header>
+            <a href="case4.html" class="back-btn">⬅ Back to Profile Management</a>
+        </header>
+
+        <!-- Section: Select Animal for Transport -->
+        <section class="profile-list">
+            <h2>Select Animal for Transport</h2>
+            <ul id="transportProfiles"></ul>
+        </section>
+
+        <!-- Section: Transport Assignment Form -->
+        <div class="transport-form">
+            <h3>1️⃣ Assign Pet for Transport</h3>
+            <label for="selectedPet">Selected Pet:</label>
+            <input type="text" id="selectedPet" placeholder="Click a profile above" readonly>
+
+            <label for="destination">Destination:</label>
+            <select id="destination" onchange="toggleAddressField()">
+                <option value="">Select</option>
+                <option value="Foster Home">Foster Home</option>
+                <option value="Vet Clinic">Vet Clinic</option>
+                <option value="Another Shelter">Another Shelter</option>
+            </select>
+
+            <div id="addressField" class="address-field" style="display: none;">
+                <label for="destinationAddress">Address:</label>
+                <input type="text" id="destinationAddress" placeholder="Enter destination address">
+            </div>
+
+            <label for="driver">Assign Driver:</label>
+            <input type="text" id="driver" placeholder="Enter driver's name">
+
+            <button onclick="submitTransportRequest()">Submit Transport Request</button>
+        </div>
+
+        <!-- Section: Review Transport Requests -->
+        <div class="review-section">
+            <h3>2️⃣ Coordinator Review</h3>
+            <button onclick="reviewTransport()">Review Pending Requests</button>
+            <ul id="reviewList"></ul>
+        </div>
+
+        <!-- Section: Driver Updates -->
+        <div class="transport-status">
+            <h3>3️⃣ Driver Updates Transport Status</h3>
+            <ul id="transportList"></ul>
+        </div>
+
+        <!-- Section: Placement Updates -->
+        <div class="placement-updates">
+            <h3>4️⃣ System Updates Placement Records</h3>
+            <ul id="completedList"></ul>
+        </div>
+    </div>
+
+    <script src="../js/case3.js"></script>
+</body>
+</html>

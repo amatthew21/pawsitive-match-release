@@ -1,0 +1,47 @@
+/* Move submit button to a new line */
+.submit-container {
+    margin-top: 10px; /* Adds space above the button */
+    display: block;
+    text-align: center; /* Optional: Centers the button */
+}
+
+/* Styling for form fields (optional) */
+.application-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.application-container h2 {
+    text-align: center;
+    color: #4CAF50;
+    font-family: 'Arial', sans-serif
+}
+
+/* Ensure all form elements are stacked properly */
+#foster-form label,
+#foster-form input,
+#foster-form select,
+#foster-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Profiles</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Filters</h2>
+
+            <div class="filter-group">
+                <h3>Search</h3>
+                <input type="text" id="search-box" placeholder="Search by species or breed...">
+            </div>
+
+            <div class="filter-group">
+                <h3>Filter by Species</h3>
+                <label><input type="checkbox" id="filter-cat"> Cat</label><br>
+                <label><input type="checkbox" id="filter-dog"> Dog</label>
+            </div>
+
+            <div class="filter-group">
+                <h3>Filter by Adoption Status</h3>
+                <label><input type="checkbox" id="filter-unadopted"> Unadopted</label><br>
+                <label><input type="checkbox" id="filter-adopted"> Adopted</label>
+            </div>
+
+            <div class="filter-group">
+                <h3>Filter by Weight (kg)</h3>
+                <label>Min: <input type="number" id="filter-weight-min" min="0" value="0"></label><br>
+                <label>Max: <input type="number" id="filter-weight-max" min="0" value="100"></label>
+            </div>
+        </aside>
+
+        <main class="content">
+            <h1>Pawsitive Animals!</h1>
+            <button id="back-button">← Back to Home</button>
+            <div id="animals-container"></div>
+        </main>
+    </div>
+
+    <script src="../js/animals.js"></script>
+</body>
+</html>

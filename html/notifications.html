@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications & Updates - Pawsitive Match</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="hamburger-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="nav-menu">
+                <a href="home.html">Home</a>
+                <a href="#">Application</a>
+                <a href="about-us.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Get Involved</a>
+                    <div class="dropdown-content">
+                        <a href="notifications.html">Notifications & Updates</a>
+                        <a href="volunteer.html">Volunteer Opportunities</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section class="notifications-section">
+            <h2>Stay Updated with Pawsitive Match!</h2>
+            <p>Subscribe to receive important updates about adoption applications, foster pet care, and volunteer opportunities.</p>
+            
+            <form id="notificationsForm">
+                <input type="text" id="fullName" name="fullName" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label>
+                    <input type="checkbox" id="adoptionUpdates" name="adoptionUpdates">
+                    Adoption Status Updates
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="eventNotifications" name="eventNotifications">
+                    Adoption Events & Fundraisers
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="volunteerUpdates" name="volunteerUpdates">
+                    New Volunteer Opportunities
+                </label><br>
+
+                <button type="submit">Subscribe</button>
+            </form>
+
+            <p id="confirmationMessage" style="display: none; color: green; font-weight: bold;">
+                Your preferences have been saved!
+            </p>
+        </section>
+    </main>
+
+    <script src="../js/notifications.js"></script>
+
+</body>
+</html>
